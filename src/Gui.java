@@ -131,19 +131,17 @@ public class Gui extends JFrame {
 
 
             encrypt.addActionListener(e -> {
-                String enkey = key.getText();
-                if (enkey.length()<=24){
-                    enkey= enkey+"000000000000000000000000";
-                    enkey = enkey.substring(0, 24);
-                }else {
-                    enkey = enkey.substring(0, 24);
+                String enKey = key.getText();
+                if (enKey.length()<=24){
+                    enKey= enKey+"000000000000000000000000";
                 }
+                enKey = enKey.substring(0, 24);
                 FileInputStream inFile;
                 FileOutputStream outFile;
                 try {
                     inFile = new FileInputStream(imagePath.getText());
                     outFile = new FileOutputStream("./src/EncryptedImages/"+LocalDateTime.now().toString().replace(".","").replace(":","") +".png");
-                    Key secretKey = new SecretKeySpec(enkey.getBytes(), "AES");
+                    Key secretKey = new SecretKeySpec(enKey.getBytes(), "AES");
                     Cipher cipher = Cipher.getInstance("AES");
                     cipher.init(Cipher.ENCRYPT_MODE, secretKey);
                     byte[] input = new byte[64];
