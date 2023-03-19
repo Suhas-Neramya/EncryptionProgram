@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ef69716c-9c07-4c9c-9be6-d8b036371c0a" name="Changes" comment="Finalized the GUIs structure">
-      <change afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
+    <list default="true" id="ef69716c-9c07-4c9c-9be6-d8b036371c0a" name="Changes" comment="Minor Issues Fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gui.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +29,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/neram/Documents/Year 2/EncryptionProgram/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/neram/Documents/Year 2/EncryptionProgram/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\neram\Documents\Year 2\EncryptionProgram\src" />
@@ -75,7 +73,11 @@
       <option name="presentableId" value="Default" />
       <updated>1677589191519</updated>
       <workItem from="1677589191519" duration="3739000" />
-      <workItem from="1677643328128" duration="4592000" />
+      <workItem from="1677643328128" duration="7633000" />
+      <workItem from="1677737841281" duration="614000" />
+      <workItem from="1678441926630" duration="663000" />
+      <workItem from="1678858448073" duration="1800000" />
+      <workItem from="1679215157654" duration="724000" />
     </task>
     <task id="LOCAL-00001" summary="Finalized the GUIs structure">
       <created>1677643729219</created>
@@ -84,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677643729219</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Encryption Code Completed">
+      <created>1677654339016</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677654339016</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Minor Issues Fixed">
+      <created>1677654494313</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677654494313</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finalized the GUIs structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finalized the GUIs structure" />
+    <MESSAGE value="Encryption Code Completed" />
+    <MESSAGE value="Minor Issues Fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor Issues Fixed" />
   </component>
 </project>

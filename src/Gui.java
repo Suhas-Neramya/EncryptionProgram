@@ -161,6 +161,9 @@ public class Gui extends JFrame {
                          | IllegalBlockSizeException | BadPaddingException EX) {
                     System.out.println(EX.getMessage());
                 }
+
+                new Gui();
+                this.dispose();
             });
 
 
@@ -224,9 +227,60 @@ public class Gui extends JFrame {
             browse.setBorder(new RoundBorder(10, "#312f1e"));
             this.add(browse);
 
+            JLabel imagePath = new JLabel();
+            imagePath.setBounds(50, 200, 400, 30);
+            imagePath.setFocusable(false);
+
+            browse.addActionListener(e -> {
+                JFileChooser fileChooser = new JFileChooser();
+                fileChooser.setCurrentDirectory(new java.io.File("."));
+                fileChooser.setDialogTitle("Select the image");
+                fileChooser.setFileSelectionMode(JFileChooser.FILES_ONLY);
+                fileChooser.setAcceptAllFileFilterUsed(false);
+                if (fileChooser.showOpenDialog(this) == JFileChooser.APPROVE_OPTION) {
+                    imagePath.setText(fileChooser.getSelectedFile().getAbsolutePath());
+                }
+            });
 
             decrypt.addActionListener(e -> {
 
+                String enKey = key.getText();
+                if (enKey.length()<=24){
+                    enKey= enKey+"000000000000000000000000";
+                }
+                enKey = enKey.substring(0, 24);
+                FileInputStream inFile;
+                FileOutputStream outFile;
+
+
+
+                try {
+                    inFile = new FileInputStream(imagePath.getText());
+                    outFile = new FileOutputStream("./src/tempDecrypt/" +LocalDateTime.now().toString().replace(".","").replace(":","") + ".png");
+                    Key secretKey = new SecretKeySpec(enKey.getBytes(), "AES");
+                    Cipher cipher = Cipher.getInstance("AES");
+                    cipher.init(Cipher.DECRYPT_MODE, secretKey);
+                    byte[] input = new byte[64];
+                    int bytesRead;
+                    while ((bytesRead = inFile.read(input)) != -1) {
+                        byte[] output = cipher.update(input, 0, bytesRead);
+                        outFile.write(output);
+                    }
+                    byte[] output = cipher.doFinal();
+                    outFile.write(output);
+                    inFile.close();
+                    outFile.flush();
+                    outFile.close();
+                    System.out.println("File Decrypted.");
+                } catch (NoSuchAlgorithmException | NoSuchPaddingException
+                         | InvalidKeyException | IOException
+                         | IllegalBlockSizeException | BadPaddingException EX) {
+                    System.out.println(EX.getMessage());
+                }
+
+
+                new Gui();
+                this.dispose();
             });
 
             goBack.addActionListener(e -> {
