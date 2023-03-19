@@ -4,7 +4,8 @@ The provided application offers a graphical user interface (GUI) for encrypting 
 
 
 ## Home Page
-![image](https://user-images.githubusercontent.com/98030506/226164618-3ddfaad1-102c-4db9-b7bf-d1f7efd84902.png)
+<img  width="250" src="https://user-images.githubusercontent.com/98030506/226164618-3ddfaad1-102c-4db9-b7bf-d1f7efd84902.png">
+
 
 ## Encryption Page
 ![image](https://user-images.githubusercontent.com/98030506/226164634-8642d10b-15db-48f8-b83d-68fd8e037126.png)
