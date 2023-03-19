@@ -8,7 +8,8 @@ The provided application offers a graphical user interface (GUI) for encrypting 
 
 
 ## Encryption Page
-![image](https://user-images.githubusercontent.com/98030506/226164634-8642d10b-15db-48f8-b83d-68fd8e037126.png)
+<img  width="250" src="https://user-images.githubusercontent.com/98030506/226164634-8642d10b-15db-48f8-b83d-68fd8e037126.png">
 
 ## Decryption Page
-![image](https://user-images.githubusercontent.com/98030506/226164644-d699e60a-4217-4c82-95ed-c3dd5da0ed1d.png)
+<img  width="250" src="https://user-images.githubusercontent.com/98030506/226164644-d699e60a-4217-4c82-95ed-c3dd5da0ed1d.png">
+
