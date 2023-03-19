@@ -1,6 +1,9 @@
 # EncryptionProgram
-This Program is will Let Users Enter a Custom key and Encrypt the Files accourding to that Key.
-Home Page
+
+The provided application offers a graphical user interface (GUI) for encrypting and decrypting picture files with the Advanced Encryption Standard (AES) algorithm. The program consists of three classes: Gui, EncryptData, and DecryptData, all of which extend JFrame. The Gui class generates a window containing encryption and decryption buttons. When one of these buttons is clicked, a new window appears, prompting the user to input a key and choose an image file to encrypt or decrypt. The program then uses AES to encrypt and decrypt the image and saves it to a file in the "EncryptedImages" directory. The application employs the javax.crypto package for encryption and decryption, as well as the javax.swing and java.awt libraries for building the graphical user interface.
+
+
+## Home Page
 ![image](https://user-images.githubusercontent.com/98030506/226164618-3ddfaad1-102c-4db9-b7bf-d1f7efd84902.png)
 
 ## Encryption Page
